@@ -1,0 +1,117 @@
+/* 기본 스타일 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* API 키 입력창 */
+#api-key-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+#api-key-input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+#set-api-key-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-left: 8px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#set-api-key-button:hover {
+  background-color: #0056b3;
+}
+
+/* 채팅 전체 컨테이너 */
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  height: 80vh;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* 기존 코드 유지 */
+
+/* 채팅 메시지 표시 박스 */
+#chat-box {
+  flex-grow: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background-color: #f4f4f9;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 메시지 스타일 */
+.message {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+/* 사용자 메시지 (오른쪽 정렬) */
+.message.user {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+}
+
+/* GPT 메시지 (왼쪽 정렬) */
+.message.chatgpt {
+  align-self: flex-start;
+  background-color: #e4e6eb;
+  color: black;
+}
+
+/* 입력 창 및 버튼 */
+#input-container {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+#user-input {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#send-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-left: 8px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background-color: #0056b3;
+}
